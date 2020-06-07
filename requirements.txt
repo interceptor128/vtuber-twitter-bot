@@ -1,0 +1,6 @@
+Pillow==6.2.1
+tweepy==3.8.0
+APScheduler==3.0.3
+selenium==3.141.0
+pytwitcasting==1.0.0
+chromedriver-binary==83.0.4103.39
