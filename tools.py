@@ -26,13 +26,8 @@ def twitter_api():
 #tweetはツイートする文章、filesは画像のパスのlist
 def tweet_with_imgs(tweet, files):
     api = twitter_api()
-    media_ids = []
-    for ii in range(len(files)):
-        img = api.media_upload(files[ii])
-        media_ids.append(img.media_id_string)
-
     time.sleep(sl_time)
-    api.update_status(status=tweet, media_ids=media_ids)
+    api.update_with_media(status=tweet, filename=files)
 
 
 #urlにある画像をdst_pathで指定したパスにダウンロードする

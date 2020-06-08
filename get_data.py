@@ -10,9 +10,6 @@ import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from PIL import Image
-# from pytwitcasting.auth import TwitcastingApplicationBasis
-# from pytwitcasting.api import API
-
 from tools import twitter_api
 api = twitter_api()
 from dics import YT_ID_dic, tw_url_dic, tw_id_dic
