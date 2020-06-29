@@ -96,7 +96,7 @@ def get_twitter_profile_ss(browser, name, png_path):
     browser.get(tw_url_dic[name])
     time.sleep(5)
 
-    xpath   = '/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div/div/div/div[1]'
+    xpath   = os.environ['TW_FULL_XPATH']
     element = browser.find_element_by_xpath(xpath)
     browser.get_screenshot_as_file(png_path)
     left    = int(element.location['x'])
