@@ -24,7 +24,6 @@ tw_url_dic = {
     "佐久間ねむ" : "https://mobile.twitter.com/NNemuu_"
 }
 
-
 tw_id_dic = {
     "七瀬すばる" : 1027562205347102720,
     "しぐれうい" : 69496975,

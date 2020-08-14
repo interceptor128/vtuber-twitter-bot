@@ -1,7 +1,27 @@
 # vtuber-twitter-bot
 
+Twitterのプロフィール文章及びプロフ画像の変更、またYoutubeチャンネル登録者数を監視し変化があったらツイートするPythonプログラムです。
+
 参考サイト  
 https://qiita.com/iroiro_bot/items/3406caf025e89b8f7a25
+
+
+# ファイル構成解説
+
+.  
+├── .font  
+│   └── `SourceHanMono-Regular.otf`  
+├── `LICENSE`  
+├── `Procfile` ← heroku用実行時設定ファイル  
+├── `README.md`  
+├── `dics.py` ← vtuberのリスト  
+├── `get_data.py` ← SS等の機能別処理  
+├── `index.py` ← heroku実行用ダミーファイル  
+├── `main.py` ← メイン処理  
+├── `requirements.txt` ← Pythonモジュール＆パッケージリスト  
+├── `runtime.txt` ← heroku用Pythonバージョン指定ファイル  
+└── `tools.py` ← twitter関連処理
+
 
 # Herokuにデプロイする時の注意点
 
