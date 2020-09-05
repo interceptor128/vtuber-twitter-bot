@@ -1,5 +1,5 @@
 # botが見るVTuberのリスト
-members = ["七瀬すばる", "しぐれうい", "カグラナナ", "焼まゆる", "エルゼ", "村瀬巴", "千莉", "佐久間ねむ"]
+members = ["七瀬すばる", "しぐれうい", "カグラナナ", "焼まゆる", "エルゼ", "千莉", "佐久間ねむ"]
 
 # YouTube Ch の Channel ID　の辞書
 YT_ID_dic = {
@@ -19,7 +19,6 @@ tw_url_dic = {
     "カグラナナ" : "https://mobile.twitter.com/nana_kaguraaa",
     "焼まゆる" : "https://mobile.twitter.com/yaki_mayu",
     "エルゼ" : "https://mobile.twitter.com/Else_ASMR",
-    "村瀬巴" : "https://mobile.twitter.com/Murase_Tomoe",
     "千莉" : "https://mobile.twitter.com/V_Economist",
     "佐久間ねむ" : "https://mobile.twitter.com/NNemuu_"
 }
@@ -30,7 +29,6 @@ tw_id_dic = {
     "カグラナナ" : 4080861612,
     "焼まゆる" : 121674699,
     "エルゼ" : 1058250264019263489,
-    "村瀬巴" : 981867535984295937,
     "千莉" : 1073516137667653632,
     "佐久間ねむ" : 1080744290978979841
 }
