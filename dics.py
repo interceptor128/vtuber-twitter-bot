@@ -36,10 +36,10 @@ tw_id_dic = {
 #https://bitly.com で短縮したチャンネルURL
 #https://www.youtube.com/channel/***********
 bitly_yt_dic = {
-    "七瀬すばる" : "https://bit.ly/2z9PzFG",
-    "しぐれうい" : "https://bit.ly/2Y8leQv",
-    "カグラナナ" : "https://bit.ly/3h4vLEP",
-    "焼まゆる"  : "https://bit.ly/2XHVtYg",
+    "七瀬すばる" : "https://bit.ly/2FHlxMI",
+    "しぐれうい" : "https://bit.ly/3krAd1a",
+    "カグラナナ" : "https://bit.ly/3cgJ7M4",
+    "焼まゆる"  : "https://bit.ly/3iMqdzn",
     "エルゼ" : "https://bit.ly/3jso9xh",
     "千莉" : "https://bit.ly/3eLtPyz",
     "佐久間ねむ" : "https://bit.ly/2ZMf4Hw"
