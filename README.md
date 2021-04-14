@@ -3,12 +3,11 @@
 Twitterのプロフィール文章及びプロフ画像の変更、またYoutubeチャンネル登録者数を監視し変化があったらツイートするPythonプログラムです。
 
 参考サイト  
-https://qiita.com/iroiro_bot/items/3406caf025e89b8f7a25
+[heroku + Python で Vtuber Twitter bot 作る - Qiita](https://qiita.com/iroiro_bot/items/3406caf025e89b8f7a25)
 
+## ファイル構成解説
 
-# ファイル構成解説
-
-.  
+root.  
 ├── .font  
 │   └── `SourceHanMono-Regular.otf`  
 ├── `LICENSE`  
@@ -22,10 +21,10 @@ https://qiita.com/iroiro_bot/items/3406caf025e89b8f7a25
 ├── `runtime.txt` ← heroku用Pythonバージョン指定ファイル  
 └── `tools.py` ← twitter関連処理
 
+## Herokuにデプロイする時の注意点
 
-# Herokuにデプロイする時の注意点
+### スクリーンショット文字化け対策
 
-## スクリーンショット文字化け対策
 デフォルトだと日本語フォントが入っていないため、スクリーンショットに文字化けが発生する  
 対策方法を以下に記す。  
 
@@ -34,11 +33,12 @@ https://qiita.com/iroiro_bot/items/3406caf025e89b8f7a25
 1. ダウンロードしたフォントを .fonts に格納
 1. 最後にコミット（マージ）し、デプロイする
 
-## Twitter仕様変更対策
+### Twitter仕様変更対策  
 
 スクリーンショット要素を環境変数として設定する
 
-**コード例**
+#### コード例
+
 ```python
 import os
 
