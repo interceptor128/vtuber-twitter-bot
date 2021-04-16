@@ -101,26 +101,6 @@ def number_notification(members_, num):
                 print('number_notification')
                 print('Tweeted.')
 
-        # if _judge(member, 'tc_supporter'):
-        #     tweet  = tweet_head + '{}のTwitCastingサポーター数が\n  {:.1f}万人を達成しました。\n'\
-        #                             .format(member_, contents[member]['tc_supporter']/10000)
-        #     tweet += '(TwitCasting : {})\n'.format(bitly_tc_dic[member])
-        #     if _tw_cancel(tweet):
-        #         time.sleep(sl_time)
-        #         api.update_status(tweet)
-        #         print('number_notification')
-        #         print('Tweeted.')
-
-        # if contents[member]['tc_level'] > old_contents[member]['tc_level']:
-        #     tweet  = tweet_head + '{}のTwitCastingレベルが\n  {}に上がりました。\n'\
-        #                             .format(member_, contents[member]['tc_level'])
-        #     tweet += '(TwitCasting : {})\n'.format(bitly_tc_dic[member])
-        #     if _tw_cancel(tweet):
-        #         time.sleep(sl_time)
-        #         api.update_status(tweet)
-        #         print('number_notification')
-        #         print('Tweeted.')
-
     with open(num_log_file_, 'wb') as pi:
         pickle.dump(contents, pi)
 
