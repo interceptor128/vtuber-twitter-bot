@@ -1,15 +1,14 @@
 from __future__ import print_function
 from dics import members, tw_id_dic, bitly_yt_dic
-from get_data import get_subscriber, get_follower, get_twitter_profile, get_twitter_profile_ss, chrome_driver
+from get_data import get_subscriber, get_follower, get_twitter_profile, get_twitter_profile_ss, chrome_driver, enable_download_in_headless_chrome
 from tools import twitter_api, tweet_with_imgs, download_image, concatenate_img
 import time
 import datetime
 import pickle
 import os
 from glob import glob
-
-import tweepy
 from apscheduler.schedulers.blocking import BlockingScheduler
+
 sched = BlockingScheduler()
 
 api = twitter_api()
@@ -126,6 +125,8 @@ def tw_log_notification(members_, num):
 
     browser = chrome_driver()
     for name in contents.keys():
+        enable_download_in_headless_chrome(
+            browser, prof_img.format('old', name))
         if not os.path.exists(icon_img.format('old', name)):
             download_image(contents[name]['アイコン'],
                            icon_img.format('old', name))
