@@ -68,15 +68,6 @@ def get_twitter_profile(name):
     return contents
 
 
-# セキュリティ対策
-def enable_download_in_headless_chrome(driver, download_dir):
-    driver.command_executor._commands["send_command"] = (
-        "POST", '/session/$sessionId/chromium/send_command')
-    params = {'cmd': 'Page.setDownloadBehavior', 'params': {
-        'behavior': 'allow', 'downloadPath': download_dir}}
-    driver.execute("send_command", params)
-
-
 # スクショのための準備
 def chrome_driver():
     time.sleep(sl_time)
@@ -87,6 +78,7 @@ def chrome_driver():
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument("--single-process")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument('window-size=1440x1440')
     browser = webdriver.Chrome(executable_path=str(os.environ.get('CHROMEDRIVER_PATH')),
                                options=options)
